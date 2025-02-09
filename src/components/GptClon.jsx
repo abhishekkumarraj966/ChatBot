@@ -68,7 +68,7 @@ const GptClon = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-2">
       <h1 className="text-2xl font-semibold mb-4">What can I help with?</h1>
 
       {/* Chat Box */}
@@ -121,7 +121,7 @@ const GptClon = () => {
           </button>
         )}
       </div>
-      <div className="my-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 justify-center">
+      <div className="my-3 sm:mb-8 grid grid-cols-6 sm:grid-cols-3 md:grid-cols-6 gap-3 justify-center">
         {[
           { text: "Summarize text", icon: "📄" },
           { text: "Make a plan", icon: "📝" },
@@ -132,26 +132,19 @@ const GptClon = () => {
         ].map((item, index) => (
           <button
             key={index}
-            className="bg-gray-800 border border-gray-700 rounded-lg px-2 py-2 flex items-center justify-center space-x-2 text-sm w-full"
+            className="bg-gray-800 border border-gray-700 sm:rounded-lg p-4 rounded-full sm:px-2 sm:py-2 flex items-center justify-center space-x-2 text-sm w-full"
           >
             <span>{item.icon}</span>
-            <span>{item.text}</span>
+            <span className="hidden sm:block">{item.text}</span>
           </button>
         ))}
       </div>
 
       {/* Terms & Conditions */}
-      <p className="absolute bottom-2 mt-2 left-1/2 transform -translate-x-1/2 text-gray-500 text-xs text-center px-4 md:text-sm md:bottom-2">
-        By messaging ChatGPT, you agree to our{" "}
-        <a href="#" className="underline">
-          Terms
-        </a>{" "}
-        and have read our{" "}
-        <a href="#" className="underline">
-          Privacy Policy
-        </a>
-        .
-      </p>
+     <p className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full text-center bg-gray-900 text-white py-2">
+  © 2025 All Right Reserved. Developed By Abhishek Raj.
+</p>
+
     </div>
   );
 };
