@@ -69,7 +69,7 @@ const GptClon = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center p-2">
-      <h1 className="text-2xl font-semibold mb-4">What can I help with?</h1>
+      <h1 className="text-2xl font-semibold mb-4">Customer Care Al</h1>
 
       {/* Chat Box */}
       <div className="w-full max-w-2xl h-[500px]  rounded-lg p-4 overflow-y-auto flex flex-col font-inter space-y-2">
@@ -100,7 +100,7 @@ const GptClon = () => {
       <div className="w-full max-w-2xl bg-gray-800 rounded-xl p-4 flex items-center space-x-2 mt-4">
         <input
           type="text"
-          placeholder="Message ChatGPT..."
+          placeholder="Talk to Customer Care Al"
           className="flex-1 bg-transparent outline-none text-white placeholder-gray-400 px-3"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
@@ -121,7 +121,7 @@ const GptClon = () => {
           </button>
         )}
       </div>
-      <div className="my-3 sm:mb-8 grid grid-cols-6 sm:grid-cols-3 md:grid-cols-6 gap-3 justify-center">
+      {/* <div className="my-3 sm:mb-8 grid grid-cols-6 sm:grid-cols-3 md:grid-cols-6 gap-3 justify-center">
         {[
           { text: "Summarize text", icon: "📄" },
           { text: "Make a plan", icon: "📝" },
@@ -138,7 +138,7 @@ const GptClon = () => {
             <span className="hidden sm:block">{item.text}</span>
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Terms & Conditions */}
      <p className="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full text-center bg-gray-900 text-white py-2">
